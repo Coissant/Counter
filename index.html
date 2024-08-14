@@ -33,6 +33,21 @@
 	   <link rel="manifest" crossorigin="use-credentials" href="manifest.json"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="styles.css">
+
+	   <script>
+function setFullScreen() {
+    // Calculate the viewport height and set the --vh custom property
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Execute the function when the script runs
+setFullScreen();
+
+// Recalculate the viewport height on resize
+window.addEventListener('resize', setFullScreen);
+</script>
+
     </head>
   <body>
     <div id="loading">
