@@ -1,16 +1,11 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
     overflow: hidden;
-    background-color: black;
 }
-
-.container {
-    height: calc(var(--vh, 1vh) * 100); /* Set the container height to 100% of the viewport height */
+canvas {
+    display: block;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
 }
